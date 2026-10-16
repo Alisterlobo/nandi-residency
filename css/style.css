@@ -2031,3 +2031,36 @@ footer p,footer a,.loc li{overflow-wrap:anywhere}
   }
 }
 
+/* =========================================================
+   COMPACT HERO BUTTONS FOR MOBILE
+   ========================================================= */
+@media (max-width: 700px) {
+  /* Restrict the entire button container width */
+  .hero .row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    gap: 8px !important;
+  }
+
+  /* Force sleek, controlled button dimensions */
+  .hero .row .btn {
+    width: auto !important;
+    min-width: 170px !important;    /* Compact width */
+    max-width: 200px !important;    /* Prevents stretching */
+    height: 38px !important;        /* Slimmer height */
+    min-height: unset !important;
+    padding: 0 16px !important;     /* Less bloated padding */
+    font-size: 13.5px !important;   /* Sleek, professional text size */
+    font-weight: 600 !important;
+    border-radius: 999px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+}
