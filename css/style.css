@@ -2258,3 +2258,42 @@ footer p,footer a,.loc li{overflow-wrap:anywhere}
     margin: 0 !important;
   }
 }
+
+
+/* =========================================================
+   COMPACT SIDE-BY-SIDE HERO BUTTONS (MOBILE)
+   ========================================================= */
+@media (max-width: 600px) {
+  .hero .row {
+    display: flex !important;
+    flex-direction: row !important; /* Forces side-by-side */
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 320px !important;    /* Keeps them centered and tidy */
+    margin: 0 auto !important;
+    gap: 10px !important;          /* Clean gap between the two pills */
+  }
+
+  .hero .row .btn {
+    flex: 1 1 50% !important;      /* Equal 50/50 split */
+    min-width: 0 !important;
+    width: auto !important;
+    height: 42px !important;       /* Balanced sleek height */
+    min-height: unset !important;
+    padding: 0 14px !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    border-radius: 999px !important;
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Removes the faint ghost-ring glow on mobile so it looks clean */
+  .hero .row .btn:first-child {
+    animation: none !important;
+  }
+}
