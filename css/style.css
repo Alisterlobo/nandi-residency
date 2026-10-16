@@ -2074,3 +2074,94 @@ footer p,footer a,.loc li{overflow-wrap:anywhere}
     justify-content: center !important;
   }
 }
+
+
+/* =========================================================
+   PROFESSIONAL TABLET TUNING (768px to 1024px)
+   ========================================================= */
+@media (min-width: 701px) and (max-width: 1024px) {
+  /* 1. Header: Restore the 'Book now' button next to the burger */
+  header .wrap {
+    height: 64px !important;
+    padding: 0 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .logo {
+    margin-right: auto !important;
+    font-size: 19px !important;
+  }
+
+  header .btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 8px 18px !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    height: 38px !important;
+    min-height: unset !important;
+    margin-right: 12px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .burger {
+    display: grid !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* 2. Hero: Proportionate height so 'Our rooms' peeks from below */
+  .hero {
+    min-height: 68vh !important;
+    max-height: 720px !important;
+    padding: 60px 0 44px !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(34px, 4.4vw, 46px) !important;
+    margin-bottom: 14px !important;
+  }
+
+  .hero p {
+    font-size: 15.5px !important;
+    max-width: 520px !important;
+    margin: 14px auto 26px !important;
+    line-height: 1.55 !important;
+  }
+
+  /* 3. Button row & remove distracting ghost ring */
+  .hero .row {
+    margin-bottom: 16px !important;
+    gap: 14px !important;
+  }
+
+  .hero .row .btn:first-child {
+    animation: none !important; /* Removes ghost double-ring outline */
+  }
+
+  .hero .row .btn {
+    min-width: 145px !important;
+    height: 42px !important;
+    padding: 0 20px !important;
+    font-size: 14px !important;
+  }
+
+  /* 4. Trust stats: crisp single-row layout */
+  .trust {
+    max-width: 580px !important;
+    margin: 32px auto 0 !important;
+    padding-top: 22px !important;
+    gap: 36px !important;
+  }
+
+  .trust b {
+    font-size: 22px !important;
+  }
+
+  .trust span {
+    font-size: 13px !important;
+  }
+}
+
