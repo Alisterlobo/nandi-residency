@@ -2259,4 +2259,42 @@ footer p,footer a,.loc li{overflow-wrap:anywhere}
   }
 }
 
+/* =========================================================
+   COMPACT HERO BUTTONS (MOBILE)
+   ========================================================= */
+@media (max-width: 600px) {
+  .hero .row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    gap: 10px !important;
+  }
 
+  /* Clamp the button width to a sleek, fixed pill size */
+  .hero .row .btn {
+    width: 190px !important;       /* Clean, narrow width */
+    max-width: 190px !important;
+    min-width: unset !important;
+    flex: none !important;
+    height: 40px !important;       /* Slim height */
+    min-height: unset !important;
+    padding: 0 16px !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    border-radius: 999px !important;
+    text-align: center !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Removes the faint ghost-ring outline around the top button */
+  .hero .row .btn:first-child {
+    animation: none !important;
+  }
+}
