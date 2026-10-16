@@ -1943,3 +1943,91 @@ footer p,footer a,.loc li{overflow-wrap:anywhere}
 }
 
 
+/* =========================================================
+   MOBILE HEADER & HERO BUTTON REFINEMENTS (< 700px)
+   ========================================================= */
+@media (max-width: 700px) {
+  /* 1. Header Bar: Fix height & vertical alignment */
+  header .wrap {
+    height: 58px !important;
+    padding: 0 14px !important;
+    gap: 8px !important;
+    align-items: center !important;
+  }
+
+  /* 2. Brand / Logo: Keep logo mark + "Nandi Residency" on one line */
+  .logo {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    text-decoration: none !important;
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+  }
+
+  .logo img, .logoimg {
+    height: 32px !important;
+    width: auto !important;
+    flex-shrink: 0 !important;
+  }
+
+  .logo span, 
+  .logo {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    white-space: nowrap !important;
+    line-height: 1.1 !important;
+  }
+
+  /* 3. Header "Book now" button: Compact, sleek, and single-line */
+  header .btn {
+    white-space: nowrap !important;
+    font-size: 12.5px !important;
+    font-weight: 600 !important;
+    padding: 7px 14px !important;
+    min-height: unset !important;
+    height: 34px !important;
+    border-radius: 999px !important;
+    line-height: 1 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* 4. Hamburger menu toggle */
+  .burger {
+    width: 36px !important;
+    height: 36px !important;
+    flex-shrink: 0 !important;
+    border-radius: 8px !important;
+  }
+
+  /* 5. Hero Buttons: Slimmer, proportionate, and side-by-side */
+  .hero .row {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 0 auto !important;
+    gap: 10px !important;
+  }
+
+  .hero .row .btn {
+    flex: 1 1 50% !important;
+    width: auto !important;
+    min-height: 40px !important;
+    height: 40px !important;
+    padding: 0 14px !important;
+    font-size: 13.5px !important;
+    font-weight: 600 !important;
+    border-radius: 999px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
