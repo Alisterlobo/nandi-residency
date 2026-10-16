@@ -717,8 +717,13 @@ section{padding:48px 0}
   position:relative;
   overflow:hidden;
   color:#fff;
-  padding:130px 0 110px;
-  background:linear-gradient(135deg,#1f2d38,#3a5551)
+  padding:100px 0 80px;
+  min-height: 85vh;            /* Gives the hero breathing room on widescreen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--dark), var(--brand));
 }
 
 .hero img{
@@ -742,7 +747,11 @@ section{padding:48px 0}
   position:relative;z-index:2
 }
 .hero p{
-  color:#e8eef2
+  color: #e8eef2;
+  font-size: clamp(16px, 1.3vw, 18px);
+  max-width: 620px;
+  margin: 18px auto 32px;
+  line-height: 1.6;
 }
 .hero .pill{
   background:#ffffff26;
@@ -758,6 +767,17 @@ section{padding:48px 0}
   color:#fff;
   border-color:#ffffffaa
 }
+
+.hero .row {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
 
 @media(max-width:700px){
   .hero{padding:36px 0 28px
