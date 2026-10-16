@@ -2227,3 +2227,34 @@ footer p,footer a,.loc li{overflow-wrap:anywhere}
   }
 }
 
+/* =========================================================
+   IPAD & TABLET FOOTER BRAND FIX (700px to 1024px)
+   ========================================================= */
+@media (min-width: 701px) and (max-width: 1024px) {
+  /* Give the brand column more room in the 3-column footer grid */
+  .fcols {
+    grid-template-columns: 2.4fr 1fr 1.2fr !important;
+    gap: 24px !important;
+  }
+
+  .fbrand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+    white-space: nowrap !important;
+  }
+
+  .fbrand .flogo {
+    height: 44px !important;
+    width: 44px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .fbrand h3 {
+    font-size: clamp(20px, 2.8vw, 26px) !important; /* Scaled down from 35px */
+    white-space: nowrap !important;                  /* Strictly stops 2-line break */
+    line-height: 1.1 !important;
+    margin: 0 !important;
+  }
+}
