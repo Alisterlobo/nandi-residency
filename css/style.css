@@ -1544,19 +1544,32 @@ footer p,footer a,.loc li{overflow-wrap:anywhere}
   .hero p{font-size:15px;margin:12px auto 22px;padding:0 10px}
   .hero .pill{font-size:14px;padding:4px 16px;margin-bottom:14px}
   .hero .row{
-    flex-direction: column;
+    /* flex-direction: column;
     align-items: stretch;
     width: 100%;
     max-width: 280px;
     margin: 0 auto;
-    gap: 12px;
+    gap: 12px; */
+
+    flex-direction: row;        /* Put buttons neatly side-by-side */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    gap: 10px;
   }
   .hero .row .btn{
-    width: 100%;
-    flex: none;
+    /* width: 100%;
+    flex: none; */
+    flex: 1 1 140px;            /* Sleek, proportionate width */
+    width: auto;
+    min-height: 40px;           /* Reduced height */
+    padding: 10px 18px;         /* Reduced padding */
+    font-size: 13.5px;
   }
   .trust{
-    display: flex !important;
+    /* display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
     gap: 16px 20px !important;
@@ -1565,17 +1578,31 @@ footer p,footer a,.loc li{overflow-wrap:anywhere}
     margin-top: 28px !important;
     padding-top: 20px !important;
     border-top: 1px solid rgba(255,255,255,0.2) !important;
-    box-sizing: border-box;
+    box-sizing: border-box; */
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    width: 100%;
+    max-width: 360px;
+    margin: 24px auto 0 !important;
+    padding-top: 18px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
   }
   .trust > div{
-    flex: 1 1 28% !important;
+    /* flex: 1 1 28% !important;
+    text-align: center; */
+    flex: 1 1 auto !important;
     text-align: center;
   }
   .trust b{
-    font-size: 20px !important;
+    /* font-size: 20px !important; */
+    font-size: 19px !important;
   }
   .trust span{
+    /* font-size: 12px !important; */
     font-size: 12px !important;
+    white-space: nowrap;
   }
 /* @media(max-width:700px){
   section{padding:48px 0}
